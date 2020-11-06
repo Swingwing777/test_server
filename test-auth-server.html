@@ -55,7 +55,7 @@
     const resultLink = document.getElementById("authURL");
     // Replace this with your own endpoint
     const getAuthURL =
-      "YOUR GET AUTH URL";
+      "https://z1b17myzt4.execute-api.eu-central-1.amazonaws.com/dev/api/get-auth-url";
 
     getURLElement.onclick = function () {
       fetch(getAuthURL)
@@ -77,7 +77,7 @@
     const getAccessToken = document.getElementById("getToken");
     const accessTokenElement = document.getElementById("accessToken");
     const getToken =
-      "YOUR GET TOKEN URL";
+      "https://z1b17myzt4.execute-api.eu-central-1.amazonaws.com/dev/api/token/{code}";
 
     getAccessToken.onclick = function () {
       const getTokenRequest = getToken + codeValue.value;
